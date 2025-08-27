@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Notebook",
-      "preco": 3500.00,
+      "preco": 3500,
       "ativo": true,
       "data_criacao": "2025-01-01",
       "data_atualizacao": "2025-01-10"

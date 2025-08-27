@@ -3,7 +3,7 @@ import AppNavbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard";
 import Products from "./pages/Products";
-import ProductForm from "./pages/ProductForm";
+import ProductForm from "./components/ProductForm";
 
 function App() {
   return (

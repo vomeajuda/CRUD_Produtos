@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import api from "services/api";
+import api from "../services/api";
 import { Card, Button } from "react-bootstrap";
 import { FaBox } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
