@@ -33,7 +33,7 @@ export default function Products() {
       <Button className="mb-3" onClick={() => navigate("/products/new")}>
         Novo Produto
       </Button>
-      <table id="productsTanble" className="table table-striped">
+      <table id="productsTable" className="table table-striped">
         <thead>
           <tr>
             <th>ID</th>
