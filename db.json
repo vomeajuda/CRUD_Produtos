@@ -7,14 +7,6 @@
       "ativo": true,
       "data_criacao": "2025-01-01",
       "data_atualizacao": "2025-01-10"
-    },
-    {
-      "id": "c485",
-      "nome": "a",
-      "preco": 10,
-      "ativo": true,
-      "data_criacao": "2025-09-02",
-      "data_atualizacao": "2025-09-02"
     }
   ]
 }
