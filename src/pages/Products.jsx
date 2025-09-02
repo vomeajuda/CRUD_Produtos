@@ -26,14 +26,12 @@ export default function Products() {
         width: "15%",
         orderable: false,
         render: (data, type, row) => (
-          `
-        <button class="btn btn-warning btn-sm me-2 edit-btn" data-id="${row.id}" title="Editar">
+        `<button class="btn btn-warning btn-sm me-2 edit-btn" data-id="${row.id}" title="Editar">
           <i class="fa fa-edit"></i>
         </button>
         <button class="btn btn-danger btn-sm delete-btn" data-id="${row.id}" title="Excluir">
           <i class="fa fa-trash"></i>
-        </button>
-        `
+        </button>`
         )
       },
     ];
