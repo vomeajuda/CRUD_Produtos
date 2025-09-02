@@ -22,7 +22,7 @@ export default function ProductForm() {
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setProduct({ ...product, [name]: type === 'checkbox' ? checked : value });
+    setProduct({...product, [name]: name === "preco" ? Number(value) : (type === 'checkbox' ? checked : value)});
   };
 
   const handleSubmit = async (e) => {
