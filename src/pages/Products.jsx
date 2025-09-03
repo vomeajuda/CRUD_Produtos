@@ -10,6 +10,7 @@ export default function Products() {
   const navigate = useNavigate();
 
   const loadProducts = async () => {
+    console.log("abc");
     const res = await api.get("/products");
     setProducts(res.data);
     ProductTable(res.data, navigate, deleteProduct);
