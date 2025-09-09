@@ -40,7 +40,18 @@ function ProductTable(products, navigate, deleteProduct) {
   $("#productsTable").DataTable({
     data: products,
     columns: columns,
-    pageLength: 10
+    pageLength: 10,
+    language: {
+      "emptyTable": "Nenhum dado disponível na tabela",
+      "info": "Mostrando de _START_ até _END_ de _TOTAL_ itens",
+      "infoEmpty": "Mostrando 0 até 0 de 0 itens",
+      "infoPostFix": "",
+      "lengthMenu": "Mostrar _MENU_ itens",
+      "loadingRecords": "Carregando...",
+      "processing": "Processando...",
+      "search": "Buscar:",
+      "zeroRecords": "Nenhum registro encontrado",
+    }
   });
 
   $("#productsTable").off("click", ".edit-btn");
