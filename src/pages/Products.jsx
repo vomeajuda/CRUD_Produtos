@@ -4,6 +4,7 @@ import "datatables.net";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import ProductTable from "../components/ProductTable";
+import Swal from 'sweetalert2';
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -21,7 +22,18 @@ export default function Products() {
   }, []);
 
   const deleteProduct = async (id) => {
-    if (window.confirm("Deseja deletar este produto?")) {
+    const alerta = await Swal.fire({
+      title: 'Você tem certeza?',
+      text: 'Deseja deletar este produto?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: 'red',
+      cancelButtonColor: 'gray',
+      confirmButtonText: 'Deletar',
+      cancelButtonText: 'Cancelar',
+    });
+
+    if (alerta.isConfirmed) {
       await api.delete(`/products/${id}`);
       loadProducts();
     }
